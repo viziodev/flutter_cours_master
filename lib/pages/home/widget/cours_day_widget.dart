@@ -30,7 +30,7 @@ class _CoursDayItemWidgetState extends State<CoursDayItemWidget> {
   Widget build(BuildContext context) {
     return  Container(  
                            margin: const EdgeInsets.all(8),
-                           height: 400.0,
+                           height: 430.0,
                            width: 320,
                            decoration: const BoxDecoration(
                              color: white,
@@ -99,9 +99,9 @@ class _CoursDayItemWidgetState extends State<CoursDayItemWidget> {
                                               ),
                                              child: Container(
                                                 padding: const EdgeInsets.all(8.0),
-                                              height: 40,
-                                              width: 110,
-                                              alignment: Alignment.center,
+                                                height: 40,
+                                                width: 110,
+                                                alignment: Alignment.center,
                                                decoration: const BoxDecoration(
                                                color: blue,
                                                borderRadius: BorderRadius.all(
@@ -156,6 +156,27 @@ class _CoursDayItemWidgetState extends State<CoursDayItemWidget> {
                                                  fontWeight: FontWeight.w300,
                                         ),),
                                       ),
+                                       
+                                        Padding(
+                                          padding: const EdgeInsets.only(right: 10),
+                                          child: Row(
+                                            mainAxisAlignment: MainAxisAlignment.end,
+                                            children: [
+                                              ElevatedButton(
+                                                
+                                                  onPressed: () {
+                                                    // Action à effectuer lorsque le bouton est pressé
+                                                  },
+                                                   style: ButtonStyle(
+                                                      backgroundColor: MaterialStateProperty.all(scaffoldbg), // Couleur de fond du bouton
+                                                      padding: MaterialStateProperty.all(const EdgeInsets.all(14)), // Espacement intérieur du bouton
+                                                      shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))), // Forme du bouton
+                                                    ),
+                                                  child: const Text('Detail',style: TextStyle(color: white,fontSize: 15,fontWeight: FontWeight.w500),),
+                                                ),
+                                            ],
+                                          ),
+                                        )
 
                              ])
                              );
