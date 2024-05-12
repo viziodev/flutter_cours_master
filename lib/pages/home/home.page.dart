@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_corse/core/providers/data_proviver.dart';
+import 'package:flutter_corse/pages/home/widget/cours_day_widget.dart';
 import 'package:flutter_corse/pages/home/widget/cours_widget.dart';
 import 'package:flutter_corse/public/constants/colors.constant.dart';
 import 'package:provider/provider.dart';
@@ -139,11 +140,20 @@ class _HomePageState extends State<HomePage> {
                       const SizedBox(
                      height: 20.0,
                    ), 
-                     CoursWidget()  
+                     CoursWidget() ,
+                     const SizedBox(
+                     height: 20.0,
+                     ),
+                    const CoursDayWidget() 
+                    
                  ],),
                ),
              ),
+
+             
           ),
+       
+           
         ],
       )),
     );

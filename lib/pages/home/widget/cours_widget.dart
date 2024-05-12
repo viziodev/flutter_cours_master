@@ -62,7 +62,7 @@ class _CoursItemWidgetState extends State<CoursItemWidget> {
                                    ),
                                Spacer(),
                                Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
                                  children: [
                                    Text(
                                      "Cours 1",
