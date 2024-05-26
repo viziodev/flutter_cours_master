@@ -11,12 +11,11 @@ class DataProvider  with ChangeNotifier{
       try {
            CoursService coursService=CoursService();
             List<CoursModel> data= await  coursService.findAll();
-          
               _coursList.clear();
               _coursList.addAll(data);
               //  print(_coursList);
       }  on Response catch (e) {
-           print("Erreur :${e.statusCode}");
+              print("Erreur :${e.statusCode}");
     }
      }
 
